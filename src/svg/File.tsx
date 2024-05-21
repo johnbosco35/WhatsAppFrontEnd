@@ -1,4 +1,13 @@
-export default function FileIcon({ className }) {
+import React from "react";
+
+interface FileIconProps {
+  className?: string;
+}
+
+/**
+ * Component for rendering a file icon.
+ */
+const FileIcon: React.FC<FileIconProps> = ({ className }) => {
   return (
     <svg
       viewBox="0 0 88 110"
@@ -121,4 +130,6 @@ export default function FileIcon({ className }) {
       </g>
     </svg>
   );
-}
+};
+
+export default FileIcon;
