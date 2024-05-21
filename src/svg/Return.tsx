@@ -1,6 +1,10 @@
 import React from "react";
 
-export default function ReturnIcon({ className }) {
+interface ReturnIconProps {
+  className?: string;
+}
+
+const ReturnIcon: React.FC<ReturnIconProps> = ({ className }) => {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -20,3 +24,5 @@ export default function ReturnIcon({ className }) {
     </svg>
   );
 }
+
+export default ReturnIcon;
