@@ -1,6 +1,13 @@
 import React from "react";
 
-function LockIcon({ className }) {
+interface LockIconProps {
+  className?: string;
+}
+
+/**
+ * Component for rendering a lock icon.
+ */
+const LockIcon: React.FC<LockIconProps> = ({ className }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 28 35">
       <path
@@ -9,6 +16,6 @@ function LockIcon({ className }) {
       ></path>
     </svg>
   );
-}
+};
 
 export default LockIcon;
