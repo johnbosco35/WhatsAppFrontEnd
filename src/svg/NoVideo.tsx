@@ -1,4 +1,9 @@
-function NoVideoIcon({ className }) {
+import React from "react";
+
+/**
+ * Component for rendering an icon representing the absence of video.
+ */
+const NoVideoIcon: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
