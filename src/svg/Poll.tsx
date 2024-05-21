@@ -1,11 +1,15 @@
-export default function PollIcon() {
+import React from "react";
+
+interface PollIconProps {}
+
+const PollIcon: React.FC<PollIconProps> = () => {
   return (
     <svg
       viewBox="0 0 53 53"
       height="53"
       width="53"
       preserveAspectRatio="xMidYMid meet"
-      class=""
+      className=""
       fill="none"
     >
       <circle cx="26.5" cy="26.5" r="26.5" fill="#02A698"></circle>
@@ -40,4 +44,6 @@ export default function PollIcon() {
       ></rect>
     </svg>
   );
-}
+};
+
+export default PollIcon;
