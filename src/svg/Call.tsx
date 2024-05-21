@@ -1,4 +1,10 @@
-function CallIcon({ className }) {
+import React from "react";
+
+interface CallIconProps {
+  className?: string;
+}
+
+const CallIcon: React.FC<CallIconProps> = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,6 +12,7 @@ function CallIcon({ className }) {
       height="22"
       fill="none"
       viewBox="0 0 64 64"
+      className={className}
     >
       <path
         className="fill-blue-500"
@@ -13,6 +20,6 @@ function CallIcon({ className }) {
       ></path>
     </svg>
   );
-}
+};
 
 export default CallIcon;
