@@ -1,4 +1,10 @@
-function SpeakerIcon({ className }) {
+import React from 'react';
+
+interface SpeakerIconProps {
+  className?: string;
+}
+
+const SpeakerIcon: React.FC<SpeakerIconProps> = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
