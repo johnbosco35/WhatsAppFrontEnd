@@ -1,4 +1,10 @@
-function SendIcon({ className }) {
+import React from 'react';
+
+interface SendIconProps {
+  className?: string;
+}
+
+const SendIcon: React.FC<SendIconProps> = ({ className }) => {
   return (
     <svg width="24" height="24" x="0" y="0" viewBox="0 0 24 24">
       <path
