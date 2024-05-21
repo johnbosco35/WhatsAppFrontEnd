@@ -1,4 +1,9 @@
-export default function NotificationIcon({ className }) {
+import React from "react";
+
+/**
+ * Component for rendering a notification icon.
+ */
+const NotificationIcon: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <svg
       viewBox="0 0 48 48"
@@ -18,3 +23,5 @@ export default function NotificationIcon({ className }) {
     </svg>
   );
 }
+
+export default NotificationIcon;
