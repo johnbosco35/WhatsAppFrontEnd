@@ -1,6 +1,13 @@
 import React from "react";
 
-export default function CloseIcon({ className }) {
+interface CloseIconProps {
+  className?: string;
+}
+
+/**
+ * Component for rendering a close icon.
+ */
+const CloseIcon: React.FC<CloseIconProps> = ({ className }) => {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -15,3 +22,5 @@ export default function CloseIcon({ className }) {
     </svg>
   );
 }
+
+export default CloseIcon;
