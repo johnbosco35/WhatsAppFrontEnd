@@ -1,4 +1,13 @@
-export default function DownloadIcon({ className }) {
+import React from "react";
+
+interface DownloadIconProps {
+  className?: string;
+}
+
+/**
+ * Component for rendering a download icon.
+ */
+const DownloadIcon: React.FC<DownloadIconProps> = ({ className }) => {
   return (
     <svg
       viewBox="0 0 34 34"
@@ -10,6 +19,7 @@ export default function DownloadIcon({ className }) {
       y="0px"
       enableBackground="new 0 0 34 34"
       xmlSpace="preserve"
+      className={className}
     >
       <path
         fill="#8696A0"
@@ -21,4 +31,6 @@ export default function DownloadIcon({ className }) {
       />
     </svg>
   );
-}
+};
+
+export default DownloadIcon;
