@@ -1,4 +1,12 @@
-export default function CommunityIcon({ className }) {
+import React from "react";
+
+interface CommunityIconProps {
+  className?: string;
+}
+
+
+
+ const CommunityIcon: React.FC<CommunityIconProps> =({ className }) => {
   return (
     <svg
       viewBox="0 0 28 28"
@@ -16,3 +24,5 @@ export default function CommunityIcon({ className }) {
     </svg>
   );
 }
+
+export default CommunityIcon
