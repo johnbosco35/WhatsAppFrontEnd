@@ -1,6 +1,9 @@
 import React from "react";
 
-function MuteIcon({ className }) {
+/**
+ * Component for rendering a mute icon.
+ */
+const MuteIcon: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +21,6 @@ function MuteIcon({ className }) {
       ></path>
     </svg>
   );
-}
+};
 
 export default MuteIcon;
