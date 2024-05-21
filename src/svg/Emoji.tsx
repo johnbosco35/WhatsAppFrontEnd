@@ -1,4 +1,13 @@
-function EmojiIcon({ className }) {
+import React from "react";
+
+interface EmojiIconProps {
+  className?: string;
+}
+
+/**
+ * Component for rendering an emoji icon.
+ */
+const EmojiIcon: React.FC<EmojiIconProps> = ({ className }) => {
   return (
     <svg
       width="28"
@@ -14,6 +23,6 @@ function EmojiIcon({ className }) {
       ></path>
     </svg>
   );
-}
+};
 
 export default EmojiIcon;
