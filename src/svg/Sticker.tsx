@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function StickerIcon() {
+const StickerIcon: React.FC = () => {
   return (
     <svg width="53" height="53" fill="none" viewBox="0 0 53 53">
       <g clipPath="url(#clip0_850:74884)">
@@ -28,3 +28,5 @@ export default function StickerIcon() {
     </svg>
   );
 }
+
+export default StickerIcon;
