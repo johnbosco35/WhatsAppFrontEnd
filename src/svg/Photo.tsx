@@ -1,4 +1,8 @@
-export default function PhotoIcon() {
+import React from "react";
+
+interface PhotoIconProps {}
+
+const PhotoIcon: React.FC<PhotoIconProps> = () => {
   return (
     <svg
       viewBox="0 0 53 53"
@@ -35,4 +39,6 @@ export default function PhotoIcon() {
       </g>
     </svg>
   );
-}
+};
+
+export default PhotoIcon;
