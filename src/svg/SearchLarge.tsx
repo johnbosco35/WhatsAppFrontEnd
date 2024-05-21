@@ -1,6 +1,10 @@
 import React from "react";
 
-function SearchLargeIcon({ className }) {
+interface SearchLargeIconProps {
+  className?: string;
+}
+
+const SearchLargeIcon: React.FC<SearchLargeIconProps> = ({ className }) => {
   return (
     <svg width="24" height="24" x="0" y="0" viewBox="0 0 24 24">
       <path
