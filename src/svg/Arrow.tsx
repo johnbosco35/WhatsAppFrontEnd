@@ -1,4 +1,10 @@
-export default function ArrowIcon({ className }) {
+import React from "react";
+
+interface ArrowIconProps {
+  className?: string;
+}
+
+const ArrowIcon: React.FC<ArrowIconProps> = ({ className }) => {
   return (
     <svg
       viewBox="0 0 8 12"
@@ -18,4 +24,6 @@ export default function ArrowIcon({ className }) {
       />
     </svg>
   );
-}
+};
+
+export default ArrowIcon;
