@@ -1,4 +1,13 @@
-export default function FilterIcon({ className }) {
+import React from "react";
+
+interface FilterIconProps {
+  className?: string;
+}
+
+/**
+ * Component for rendering a filter icon.
+ */
+const FilterIcon: React.FC<FilterIconProps> = ({ className }) => {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -17,4 +26,6 @@ export default function FilterIcon({ className }) {
       />
     </svg>
   );
-}
+};
+
+export default FilterIcon;
