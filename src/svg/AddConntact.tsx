@@ -1,6 +1,10 @@
 import React from "react";
 
-function AddContactIcon({ className }) {
+interface AddContactIconProps {
+  className?: string;
+}
+
+const AddContactIcon: React.FC<AddContactIconProps> = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -23,6 +27,6 @@ function AddContactIcon({ className }) {
       </g>
     </svg>
   );
-}
+};
 
 export default AddContactIcon;
