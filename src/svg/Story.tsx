@@ -1,4 +1,11 @@
-export default function StoryIcon({ className, active }) {
+import React from 'react';
+
+interface StoryIconProps {
+  className?: string;
+  active: boolean;
+}
+
+const StoryIcon: React.FC<StoryIconProps> = ({ className, active }) => {
   if (active) {
     return (
       <svg
@@ -45,3 +52,5 @@ export default function StoryIcon({ className, active }) {
     );
   }
 }
+
+export default StoryIcon;
