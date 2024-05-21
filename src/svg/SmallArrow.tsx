@@ -1,4 +1,10 @@
-function SmallArrowIcon({ className }) {
+import React from 'react';
+
+interface SmallArrowIconProps {
+  className?: string;
+}
+
+const SmallArrowIcon: React.FC<SmallArrowIconProps> = ({ className }) => {
   return (
     <svg width="10" height="21" x="0" y="0" viewBox="0 0 10 21">
       <path
