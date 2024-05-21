@@ -1,4 +1,10 @@
-export default function SeenIcon({ className }) {
+import React from 'react';
+
+interface SeenIconProps {
+  className?: string;
+}
+
+const SeenIcon: React.FC<SeenIconProps> = ({ className }) => {
   return (
     <svg
       viewBox="0 0 18 18"
@@ -18,3 +24,5 @@ export default function SeenIcon({ className }) {
     </svg>
   );
 }
+
+export default SeenIcon;
