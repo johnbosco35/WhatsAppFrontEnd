@@ -1,6 +1,13 @@
 import React from "react";
 
-export default function DotsIcon({ className }) {
+interface DotsIconProps {
+  className?: string;
+}
+
+/**
+ * Component for rendering a dots icon.
+ */
+const DotsIcon: React.FC<DotsIconProps> = ({ className }) => {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -12,6 +19,7 @@ export default function DotsIcon({ className }) {
       y="0px"
       enableBackground="new 0 0 24 24"
       xmlSpace="preserve"
+      className={className}
     >
       <path
         className={className}
@@ -19,4 +27,6 @@ export default function DotsIcon({ className }) {
       />
     </svg>
   );
-}
+};
+
+export default DotsIcon;
