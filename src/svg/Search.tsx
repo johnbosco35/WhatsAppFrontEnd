@@ -1,4 +1,10 @@
-export default function SearchIcon({ className }) {
+import React from "react";
+
+interface SearchIconProps {
+  className?: string;
+}
+
+const SearchIcon: React.FC<SearchIconProps> = ({ className }) => {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -19,3 +25,5 @@ export default function SearchIcon({ className }) {
     </svg>
   );
 }
+
+export default SearchIcon;
