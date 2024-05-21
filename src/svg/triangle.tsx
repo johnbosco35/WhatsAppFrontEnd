@@ -1,4 +1,10 @@
-function TraingleIcon({ className }) {
+import React from 'react';
+
+interface TriangleIconProps {
+  className?: string;
+}
+
+const TraingleIcon: React.FC<TriangleIconProps> = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -14,6 +20,6 @@ function TraingleIcon({ className }) {
       ></path>
     </svg>
   );
-}
+};
 
 export default TraingleIcon;
